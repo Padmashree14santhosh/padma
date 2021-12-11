@@ -1,0 +1,19 @@
+1.	Write a blog on Difference between HTTP 1.1 vs HTTP2.
+
+•	HTTP/1.1  loads the information from the server one after the other, if one resource is missing then it will block other resource until missing resource arrived at the client browser. 
+But HTTP2 follows multiplexing , it means it sends the multiple streams of data at once, so no one resource blocks any other resource.
+•	HTTP/1.1 sends the data to the client browser when client browser sends the request to it.  But HTTP2 allows a server to push content to a client before client asks for it. Server predicts that what client request will be.
+•	HTTP/1.1 load the information slower than HTTP2. HTTP2 uses the advanced compression method called HPACK that eliminates the redundant information in HTTP header packets, so this will eliminate a few bytes from every HTTP packet. So, some volume in HTTP packet will get involved in the loading which will result in faster loading.
+
+
+2.	Write a blog about objects and its internal representation in JavaScript.
+
+•	Object in JavaScript is like a variable. It is a collection of named values that having state(properties) and behavior(method).
+•	Syntax: let <object_name>={    key 1:value 1,
+                                 Key 2: value:2,…key N:value N, };
+•	The key: value pairs in JavaScript object called properties.
+•	JavaScript object is mutable, it means the properties in the object can be changed, added and delete.
+•	Syntax for adding: Object_name.objectproperty=propertyValue
+•	Syntax for deleting delete object_name.objectproperty
+•	Syntax for access a property: object_name.property.
+
